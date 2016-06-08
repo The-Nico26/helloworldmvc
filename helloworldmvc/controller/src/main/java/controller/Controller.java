@@ -11,6 +11,7 @@ public class Controller {
 	public Controller(IView view, IModel model){
 		this.view = view;
 		this.model = model;
+		run();
 	}
 	public void run(){
 		this.view.displayMessage(this.model.getHelloWorld());
